@@ -2,19 +2,29 @@
 <html>
 	<head>
 		<title>ChatBox</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lobster' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="set_username">
-			<h2>Type your Username</h2>
-			<input type="text" id="set_username">
-			<br>
-			<button id="join">Join ChatBox</button>
+		<div id="colorbuttons">
+			<div id="blue">&nbsp</div>
+			<div id="violet">&nbsp</div>
+			<div id="orange">&nbsp</div>
+			<div id="green">&nbsp</div>
 		</div>
-		<div class="chat">
-			<div id="chatbox"></div>
-			<input type="text" placeholder="Anonymously say something" id="chatbox_content">
+		<div class="rawr">
+			<div class="set_username">
+				<h1 id="user">Chat with Us!</h1>
+				<input type="text" id="set_username" placeholder="username here">
+				<br>
+				<button id="join">Join ChatBox</button>
+			</div>
+			<div class="chat">
+				<div id="chatbox"></div>
+				<hr>
+				<input type="text" placeholder="Anonymously say something" id="chatbox_content">
+			</div>
 		</div>
-
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 		<script src="client.js"></script>
