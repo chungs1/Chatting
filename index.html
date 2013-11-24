@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ChatBox</title>
+	</head>
+	<body>
+		<div class="set_username">
+			<h2>Type your Username</h2>
+			<input type="text" id="set_username">
+			<br>
+			<button id="join">Join ChatBox</button>
+		</div>
+		<div class="chat">
+			<div id="chatbox"></div>
+			<input type="text" placeholder="Anonymously say something" id="chatbox_content">
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script src="client.js"></script>
+		
+	</body>
+</html>
